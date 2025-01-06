@@ -1,0 +1,14 @@
+{
+  "name": "aiken-hello-world",
+  "type": "module",
+  "dependencies": {
+    "@meshsdk/core": "^1.8.2",
+    "@meshsdk/react": "^1.8.2",
+    "dotenv": "^16.4.5",
+    "tsx": "^4.9.4"
+  },
+  "scripts": {
+    "lock": "npx tsx src/lock-assets.ts",
+    "unlock": "npx tsx src/unlock-assets.ts"
+  }
+}
