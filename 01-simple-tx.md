@@ -54,7 +54,7 @@ export async function getWalletInfoForTx() {
 ## Tạo file simple.test.ts
 Để chạy mà không cần giao diện Chúng ta sẽ đặt tên file là simple.test.ts với nội dung
 
-```typesrcipt
+```typescript
 import { getTxBuilder, getWalletInfoForTx, wallet} from "./common";
 
 test("Show Wallet info", async function main() {
