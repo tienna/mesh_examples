@@ -1,0 +1,81 @@
+{
+  "preamble": {
+    "title": "meshjs/aiken",
+    "description": "My first SC",
+    "version": "1.0.0",
+    "plutusVersion": "v3",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.1.9+2217206"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "hello_world.hello_aiken.spend",
+      "datum": {
+        "title": "datum_opt",
+        "schema": {
+          "$ref": "#/definitions/hello_world~1Datum"
+        }
+      },
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/hello_world~1Redeemer"
+        }
+      },
+      "compiledCode": "59014801010032323232323225333002323232323253330073370e900118041baa0011323322533300a3370e900018059baa00513232533300f30110021533300c3370e900018069baa0031323232533300f3371e6eb8c00cc044dd50052451648656c6c6f2c2041696b656e206c616e677561676521001533300f002100114a02940cdc399918008009129998098008a4000266e012002330020023015001375860246026602660206ea802920063322323300100100322533301400114a026644a66602666e3c0080145288998020020009bae301500130160013758602260246024602460246024602460246024601e6ea8024dd7180098079baa3011300f3754008460220022c2c6eb8c03c004c030dd50028b18060009806180680098049baa00116300a300b0033009002300800230080013004375400229309b2b2b9a5573aaae7955cfaba15745",
+      "hash": "0548628792460cc81d4a33e922c6b999be03ed932fbc9b23570c1377"
+    },
+    {
+      "title": "hello_world.hello_aiken.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "59014801010032323232323225333002323232323253330073370e900118041baa0011323322533300a3370e900018059baa00513232533300f30110021533300c3370e900018069baa0031323232533300f3371e6eb8c00cc044dd50052451648656c6c6f2c2041696b656e206c616e677561676521001533300f002100114a02940cdc399918008009129998098008a4000266e012002330020023015001375860246026602660206ea802920063322323300100100322533301400114a026644a66602666e3c0080145288998020020009bae301500130160013758602260246024602460246024602460246024601e6ea8024dd7180098079baa3011300f3754008460220022c2c6eb8c03c004c030dd50028b18060009806180680098049baa00116300a300b0033009002300800230080013004375400229309b2b2b9a5573aaae7955cfaba15745",
+      "hash": "0548628792460cc81d4a33e922c6b999be03ed932fbc9b23570c1377"
+    }
+  ],
+  "definitions": {
+    "ByteArray": {
+      "dataType": "bytes"
+    },
+    "VerificationKeyHash": {
+      "title": "VerificationKeyHash",
+      "dataType": "bytes"
+    },
+    "hello_world/Datum": {
+      "title": "Datum",
+      "anyOf": [
+        {
+          "title": "Datum",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "owner",
+              "$ref": "#/definitions/VerificationKeyHash"
+            }
+          ]
+        }
+      ]
+    },
+    "hello_world/Redeemer": {
+      "title": "Redeemer",
+      "anyOf": [
+        {
+          "title": "Redeemer",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "msg",
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

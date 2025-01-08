@@ -1,0 +1,18 @@
+name = "meshjs/aiken"
+version = "1.0.0"
+compiler = "v1.1.9"
+plutus = "v3"
+license = "Apache-2.0"
+description = "My first SC"
+
+[repository]
+user = "tienna"
+project = "1st_smartcontract"
+platform = "github"
+
+[[dependencies]]
+name = "aiken-lang/stdlib"
+version = "v2"
+source = "github"
+ 
+[config]
