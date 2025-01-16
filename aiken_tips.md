@@ -7,6 +7,7 @@ validator gift_card(token_name: ByteArray, utxo_ref: OutputReference) {
   spend(_d, _r, own_ref: OutputReference, transaction: Transaction) -> Bool {
     let Transaction { mint, inputs, .. } = transaction
     expect Some(own_input) = list.find(inputs, fn(input) { input.output_reference == own_ref })  // tìm ra input trùng với UTXO Ref
+//sử dụng utxo_ref tiện cho việc chọn lựa utxo có tài sản, nft như mình mong muốn
     expect Script(policy_id) = own_input.output.address.payment_credential  //Gán định script policy bằng địa chỉ 
  
     expect [Pair(asset_name, amount)] =
@@ -14,7 +15,7 @@ validator gift_card(token_name: ByteArray, utxo_ref: OutputReference) {
         |> assets.tokens(policy_id)         //lấy ra assets có số Policy ID trùng với policy_id đã chỉ định 
         |> dict.to_pairs()                  // ghép cặp và gán giá trị cho assets_name và amount
  
-    amount == -1 && asset_name == token_name
+    amount == -1 && asset_name == token_name  //check asset_name trên utxo phải phù hợp với token_name cung cấp, số lượng phải là -1
 }
 }
 ```
