@@ -1,8 +1,29 @@
 #  Giao dịch với SC đầu ra kèm tài sản kháckhác
-Lab lần này chỉ cho phép unlock fund trên hợp đồng thông minh và giao dịch trên đó có nhiều đầu ra, nhiều tài sản khác nhaunhau
-
+Lab lần này chỉ cho phép unlock fund trên hợp đồng thông minh và giao dịch có chưa một tài sản định trước 
 ## code Smart Contract
+```aiken
+validator utxo_spend() {
+  spend(datum_opt: Option<Datum>,redeemer: Redeemer, own_ref: OutputReference, transaction: Transaction) {
+    let token_name = to_bytearray(@"asset1mp5gwl95hknuy3pzmvfyj9ethhh3cxy44al66d")
+    let Transaction { mint, inputs, .. } = transaction
+    expect Some(own_input) =
+      list.find(inputs, fn(input) { input.output_reference == own_ref })
+      expect [Pair(asset_name, amount)] =
+      mint
+        |> assets.tokens(#"304c76913e8ef5d94204033ec16d9d81417bddf098fd07af7e89e9494332564e")
+        |> dict.to_pairs()
 
+    // amount == -1 && 
+    expect Some(datum) = datum_opt
+    let say_same = redeemer.msg == datum.msg
+    asset_name == token_name && say_same
+  }
+
+  else(_) {
+    fail
+  }
+}
+```
 ## Giao dịch khóa tài sản
 ### code khóa tài sản offchain
 ```typescript
