@@ -58,15 +58,28 @@ Within root folder of the project there are example `.env` files, which can be c
 | `HTTP_REQUEST_TIMEOUT_SECONDS`   | Yaci request timeout in second          | 5                      | added in release 1.2.1      |
 | `API_DB_POOL_MIN_COUNT`          | Minimum number of connections API<->DB  | 12                     | added in release 1.2.5      |
 | `API_DB_POOL_MAX_COUNT`          | Maximum number of connections API<->DB  | 12                     | added in release 1.2.5      |
-| `API_DB_POOL_MAX_LIFETIME_MS`   | Description   | 5                         | added in release 1.2.1      |
-| `API_DB_POOL_CONNECTION_TIMEOUT_MS`   | Description   | 5                         | added in release 1.2.1      |
-| `API_DB_KEEP_ALIVE_MS`   | Description   | 5                         | added in release 1.2.1      |
-| `API_DB_LEAK_CONNECTIONS_WARNING_MS`   | Description   | 5                         | added in release 1.2.1      |
-| `API_DB_MONITOR_PERFORMANCE`   | Description   | 5                         | added in release 1.2.1      |
-| ` `   | Description   | 5                         | added in release 1.2.1      |
-| ` `   | Description   | 5                         | added in release 1.2.1      |
-| ` `   | Description   | 5                         | added in release 1.2.1      |
-| ` `   | Description   | 5                         | added in release 1.2.1      |
-| ` `   | Description   | 5                         | added in release 1.2.1      |
+| `API_DB_POOL_MAX_LIFETIME_MS`    | Description                             | 2000000                | added in release 1.2.5      |
+| `API_DB_POOL_CONNECTION_TIMEOUT_MS`   | Connection time out in second      | 100000                 | added in release 1.2.5      |
+| `API_DB_KEEP_ALIVE_MS`                | Keep Alive in second               | 60000                  | added in release 1.2.5      |
+| `API_DB_LEAK_CONNECTIONS_WARNING_MS`  | Leak connection time in second     | 60000                  | added in release 1.2.5      |
+| `API_DB_MONITOR_PERFORMANCE`          | Monitor performance enable?        | false                  | added in release 1.2.5      |
+| `DB_POSTGRES_MAX_CONNECTIONS `   | Description   | 120                         | added in release 1.2.1      |
+| `DB_POSTGRES_SHARED_BUFFERS `   | Description   | 1GB                         | added in release 1.2.1      |
+| `DB_POSTGRES_EFFECTIVE_CACHE_SIZE`   | Description   | 2GB                         | added in release 1.2.1      |
+| `DB_POSTGRES_WORK_MEM`   | Description   | 16MB                         | added in release 1.2.1      |
+| `DB_POSTGRES_MAINTENANCE_WORK_MEM`   | Description   | 5                         | added in release 1.2.1      |
+| `DB_POSTGRES_WAL_BUFFERS`   | Description   | 5                         | added in release 1.2.1      |
+| `DB_POSTGRES_CHECKPOINT_COMPLETION_TARGET`   | Description   | 5                         | added in release 1.2.1      |
+| `DB_POSTGRES_RANDOM_PAGE_COST `   | Description   | 5                         | added in release 1.2.1      |
+| `DB_POSTGRES_EFFECTIVE_IO_CONCURRENCY `   | Description   | 5                         | added in release 1.2.1      |
+| `DB_POSTGRES_PARALLEL_TUPLE_COST`   | Description   | 5                         | added in release 1.2.1      |
+| `DB_POSTGRES_PARALLEL_SETUP_COST`   | Description   | 5                         | added in release 1.2.1      |
+| `DB_POSTGRES_MAX_PARALLEL_WORKERS_PER_GATHER`   | Description   | 5                         | added in release 1.2.1      |
+| `DB_POSTGRES_MAX_PARALLEL_WORKERS`   | Description   | 5                         | added in release 1.2.1      |
+| `DB_POSTGRES_SEQ_PAGE_COST `   | Description   | 5                         | added in release 1.2.1      |
+| `DB_POSTGRES_JIT`   | Description   | 5                         | added in release 1.2.1      |
+| `DB_POSTGRES_BGWRITER_LRU_MAXPAGES`   | Description   | 5                         | added in release 1.2.1      |
+| `DB_POSTGRES_BGWRITER_DELAY`   | Description   | 5                         | added in release 1.2.1      |
+
 
 
