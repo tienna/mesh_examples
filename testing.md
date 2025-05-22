@@ -63,23 +63,23 @@ Within root folder of the project there are example `.env` files, which can be c
 | `API_DB_KEEP_ALIVE_MS`                | Keep Alive in second               | 60000                  | added in release 1.2.5      |
 | `API_DB_LEAK_CONNECTIONS_WARNING_MS`  | Leak connection time in second     | 60000                  | added in release 1.2.5      |
 | `API_DB_MONITOR_PERFORMANCE`          | Monitor performance enable?        | false                  | added in release 1.2.5      |
-| `DB_POSTGRES_MAX_CONNECTIONS `   | Description   | 120                         | added in release 1.2.1      |
-| `DB_POSTGRES_SHARED_BUFFERS `   | Description   | 1GB                         | added in release 1.2.1      |
-| `DB_POSTGRES_EFFECTIVE_CACHE_SIZE`   | Description   | 2GB                         | added in release 1.2.1      |
-| `DB_POSTGRES_WORK_MEM`   | Description   | 16MB                         | added in release 1.2.1      |
-| `DB_POSTGRES_MAINTENANCE_WORK_MEM`   | Description   | 5                         | added in release 1.2.1      |
-| `DB_POSTGRES_WAL_BUFFERS`   | Description   | 5                         | added in release 1.2.1      |
-| `DB_POSTGRES_CHECKPOINT_COMPLETION_TARGET`   | Description   | 5                         | added in release 1.2.1      |
-| `DB_POSTGRES_RANDOM_PAGE_COST `   | Description   | 5                         | added in release 1.2.1      |
-| `DB_POSTGRES_EFFECTIVE_IO_CONCURRENCY `   | Description   | 5                         | added in release 1.2.1      |
-| `DB_POSTGRES_PARALLEL_TUPLE_COST`   | Description   | 5                         | added in release 1.2.1      |
-| `DB_POSTGRES_PARALLEL_SETUP_COST`   | Description   | 5                         | added in release 1.2.1      |
-| `DB_POSTGRES_MAX_PARALLEL_WORKERS_PER_GATHER`   | Description   | 5                         | added in release 1.2.1      |
-| `DB_POSTGRES_MAX_PARALLEL_WORKERS`   | Description   | 5                         | added in release 1.2.1      |
-| `DB_POSTGRES_SEQ_PAGE_COST `   | Description   | 5                         | added in release 1.2.1      |
-| `DB_POSTGRES_JIT`   | Description   | 5                         | added in release 1.2.1      |
-| `DB_POSTGRES_BGWRITER_LRU_MAXPAGES`   | Description   | 5                         | added in release 1.2.1      |
-| `DB_POSTGRES_BGWRITER_DELAY`   | Description   | 5                         | added in release 1.2.1      |
+| `DB_POSTGRES_MAX_CONNECTIONS `   | Description   | 120                         | added in release 1.2.6      |
+| `DB_POSTGRES_SHARED_BUFFERS `   | Description   | 1GB                         | added in release 1.2.6      |
+| `DB_POSTGRES_EFFECTIVE_CACHE_SIZE`   | Description   | 2GB                        | added in release 1.2.6      |
+| `DB_POSTGRES_WORK_MEM`   | Description   | 16MB                         | added in release 1.2.6      |
+| `DB_POSTGRES_MAINTENANCE_WORK_MEM`   | Description   | 2GB                        | added in release 1.2.6      |
+| `DB_POSTGRES_WAL_BUFFERS`   | Description   | 16MB                         | added in release 1.2.6      |
+| `DB_POSTGRES_CHECKPOINT_COMPLETION_TARGET`   | Description   | 0.7                         | added in release 1.2.6      |
+| `DB_POSTGRES_RANDOM_PAGE_COST `   | Description   | 3.0                         | added in release 1.2.6      |
+| `DB_POSTGRES_EFFECTIVE_IO_CONCURRENCY `   | Description   | 1                         | added in release 1.2.6      |
+| `DB_POSTGRES_PARALLEL_TUPLE_COST`   | Description   | 0.1                         | added in release 1.2.6      |
+| `DB_POSTGRES_PARALLEL_SETUP_COST`   | Description   | 1000                         | added in release 1.2.6      |
+| `DB_POSTGRES_MAX_PARALLEL_WORKERS_PER_GATHER`   | Description   | 2                         | added in release 1.2.6      |
+| `DB_POSTGRES_MAX_PARALLEL_WORKERS`   | Description   | 4                         | added in release 1.2.6      |
+| `DB_POSTGRES_SEQ_PAGE_COST `   | Description   | 1.0                         | added in release 1.2.6      |
+| `DB_POSTGRES_JIT`   | Description   | off                         | added in release 1.2.6      |
+| `DB_POSTGRES_BGWRITER_LRU_MAXPAGES`   | Description   | 50                         | added in release 1.2.6      |
+| `DB_POSTGRES_BGWRITER_DELAY`   | Description   | 500ms                         | added in release 1.2.6      |
 
 
 
