@@ -63,23 +63,23 @@ Within root folder of the project there are example `.env` files, which can be c
 | `API_DB_KEEP_ALIVE_MS`                | Keep Alive in second               | 60000                  | added in release 1.2.5      |
 | `API_DB_LEAK_CONNECTIONS_WARNING_MS`  | Leak connection time in second     | 60000                  | added in release 1.2.5      |
 | `API_DB_MONITOR_PERFORMANCE`          | Monitor performance enable?        | false                  | added in release 1.2.5      |
-| `DB_POSTGRES_MAX_CONNECTIONS `        | Maximum concurrent database connections    | 120                         | added in release 1.2.6      |
-| `DB_POSTGRES_SHARED_BUFFERS `         | Memory for caching                         | 1GB                         | added in release 1.2.6      |
-| `DB_POSTGRES_EFFECTIVE_CACHE_SIZE`    | Disk cache size                            | 2GB                        | added in release 1.2.6      |
-| `DB_POSTGRES_WORK_MEM`                | Allocate memory per operation for query processing             | 16MB                         | added in release 1.2.6      |
-| `DB_POSTGRES_MAINTENANCE_WORK_MEM`    | Allocate memory for maintenance tasks like index creation      | 2GB                          | added in release 1.2.6      |
-| `DB_POSTGRES_WAL_BUFFERS`             | Allocate memory for writing-ahead log, buffering transactions  | 16MB                         | added in release 1.2.6      |
-| `DB_POSTGRES_CHECKPOINT_COMPLETION_TARGET`   | Targets checkpoint completion                           | 0.7                          | added in release 1.2.6      |
-| `DB_POSTGRES_RANDOM_PAGE_COST `       | Cost estimate for random disk page access                      | 3.0                          | added in release 1.2.6      |
-| `DB_POSTGRES_EFFECTIVE_IO_CONCURRENCY `   | Concurrent I/O operation for table scans                   | 1                            | added in release 1.2.6      |
-| `DB_POSTGRES_PARALLEL_TUPLE_COST`     | Cost of processing each tuple in parallel queries              | 0.1                          | added in release 1.2.6      |
-| `DB_POSTGRES_PARALLEL_SETUP_COST`     | Cost for initiating parallel query workers                     | 1000                         | added in release 1.2.6      |
-| `DB_POSTGRES_MAX_PARALLEL_WORKERS_PER_GATHER`   | Limits parallel workers per query                    | 2                            | added in release 1.2.6      |
-| `DB_POSTGRES_MAX_PARALLEL_WORKERS`    | Total parallel workers across all queries                      | 4                            | added in release 1.2.6      |
+| `DB_POSTGRES_MAX_CONNECTIONS `        | Maximum concurrent database connections    | 300 (mid-level profile)                         | added in release 1.2.6      |
+| `DB_POSTGRES_SHARED_BUFFERS `         | Memory for caching                         | 4GB (mid-level profile)                         | added in release 1.2.6      |
+| `DB_POSTGRES_EFFECTIVE_CACHE_SIZE`    | Disk cache size                            | 8GB (mid-level profile)                         | added in release 1.2.6      |
+| `DB_POSTGRES_WORK_MEM`                | Allocate memory per operation for query processing             | 64MB (mid-level profile)                        | added in release 1.2.6      |
+| `DB_POSTGRES_MAINTENANCE_WORK_MEM`    | Allocate memory for maintenance tasks like index creation      | 512GB (mid-level profile)                       | added in release 1.2.6      |
+| `DB_POSTGRES_WAL_BUFFERS`             | Allocate memory for writing-ahead log, buffering transactions  | 512MB (mid-level profile)                       | added in release 1.2.6      |
+| `DB_POSTGRES_CHECKPOINT_COMPLETION_TARGET`   | Targets checkpoint completion                           | 0.7 (mid-level profile)                         | added in release 1.2.6      |
+| `DB_POSTGRES_RANDOM_PAGE_COST `       | Cost estimate for random disk page access                      | 1.3 (mid-level profile)                         | added in release 1.2.6      |
+| `DB_POSTGRES_EFFECTIVE_IO_CONCURRENCY `   | Concurrent I/O operation for table scans                   | 2 (mid-level profile)                           | added in release 1.2.6      |
+| `DB_POSTGRES_PARALLEL_TUPLE_COST`     | Cost of processing each tuple in parallel queries              | 0.05 (mid-level profile)                        | added in release 1.2.6      |
+| `DB_POSTGRES_PARALLEL_SETUP_COST`     | Cost for initiating parallel query workers                     | 500 (mid-level profile)                         | added in release 1.2.6      |
+| `DB_POSTGRES_MAX_PARALLEL_WORKERS_PER_GATHER`   | Limits parallel workers per query                    | 4 (mid-level profile)                           | added in release 1.2.6      |
+| `DB_POSTGRES_MAX_PARALLEL_WORKERS`    | Total parallel workers across all queries                      | 8 (mid-level profile)                           | added in release 1.2.6      |
 | `DB_POSTGRES_SEQ_PAGE_COST `          | Cost estimate for sequential disk page access                  | 1.0                          | added in release 1.2.6      |
 | `DB_POSTGRES_JIT`                     | Disables Just-In-Time compilation to reduce overhead           | off                          | added in release 1.2.6      |
-| `DB_POSTGRES_BGWRITER_LRU_MAXPAGES`   | Limits background writer to clean 50 pages per cycle           | 50                           | added in release 1.2.6      |
-| `DB_POSTGRES_BGWRITER_DELAY`          | Delay between background writer cycles                         | 500ms                        | added in release 1.2.6      |
+| `DB_POSTGRES_BGWRITER_LRU_MAXPAGES`   | Limits background writer to clean 50 pages per cycle           | 100 (mid-level profile)                         | added in release 1.2.6      |
+| `DB_POSTGRES_BGWRITER_DELAY`          | Delay between background writer cycles                         | 200ms (mid-level profile)                       | added in release 1.2.6      |
 
 
 
