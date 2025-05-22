@@ -48,7 +48,7 @@ Within root folder of the project there are example `.env` files, which can be c
 | `GENESIS_CONWAY_PATH`        | Genesis file path            | ./config/mainnet/conway-genesis.json  |       |
 | `INDEXER_DOCKER_IMAGE_TAG`   | Yaci indexer Docker version  | main                                  |       |
 | `PRUNING_ENABLED`            | If pruning should be enabled | false                                 |       |
-| `PRUNING_INTERVAL`           | If pruning should be enabled | 600                                   | added in Rosetta-java version 1.2.4      |
-| `PRUNING_SAFE_BLOCKS         | If pruning should be enabled | 2160                                  | added in Rosetta-java version 1.2.4       |
+| `PRUNING_INTERVAL`           | The prunning interval in seconds | 600                                   | added in release 1.2.4       |
+| `PRUNING_SAFE_BLOCKS`        | The number of safe blocks to keep in the store | 2160                                  | added in release 1.2.4       |
 | `YACI_SPRING_PROFILES`       | Yaci indexer spring profile  | postgres                              |       |
 | `DEVKIT_ENABLED`             | Devkit enabled               | false                                 |       |
