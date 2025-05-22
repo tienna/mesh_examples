@@ -48,7 +48,11 @@ Within root folder of the project there are example `.env` files, which can be c
 | `GENESIS_CONWAY_PATH`        | Genesis file path            | ./config/mainnet/conway-genesis.json  |       |
 | `INDEXER_DOCKER_IMAGE_TAG`   | Yaci indexer Docker version  | main                                  |       |
 | `PRUNING_ENABLED`            | If pruning should be enabled | false                                 |       |
-| `PRUNING_INTERVAL`           | The prunning interval in seconds | 600                                   | added in release 1.2.4       |
-| `PRUNING_SAFE_BLOCKS`        | The number of safe blocks to keep in the store | 2160                                  | added in release 1.2.4       |
+| `PRUNING_INTERVAL`           | The prunning interval in seconds               | 600                 | added in release 1.2.4       |
+| `PRUNING_SAFE_BLOCKS`        | The number of safe blocks to keep in the store | 2160                | added in release 1.2.4       |
 | `YACI_SPRING_PROFILES`       | Yaci indexer spring profile  | postgres                              |       |
 | `DEVKIT_ENABLED`             | Devkit enabled               | false                                 |       |
+| `YACI_HTTP_BASE_URL`              | Devkit enabled               | http://yaci-indexer:9095/api/v1       | added in release 1.2.1         |
+| `YACI_INDEXER_PORT`               | Devkit enabled               | 9095                                  | added in release 1.2.1      |
+| `HTTP_CONNECT_TIMEOUT_SECONDS`             | Devkit enabled               | 5                                 | added in release 1.2.1      |
+| `HTTP_REQUEST_TIMEOUT_SECONDS`             | Devkit enabled               | 5                                 | added in release 1.2.1      |
